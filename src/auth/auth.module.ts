@@ -11,7 +11,7 @@ import { User } from '../user/user.entity'; // Adjust the path if needed
     TypeOrmModule.forFeature([User]),
     UserModule,
     JwtModule.register({
-      secret: 'your-secret-key', // In production, use environment variable
+      secret: 'your-secret-key', 
       signOptions: { expiresIn: '1h' },
     }),
   ],
